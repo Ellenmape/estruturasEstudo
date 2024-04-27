@@ -1,7 +1,5 @@
 package estruturas;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -15,11 +13,11 @@ public class PilhaEx02 {
 
 		Scanner scanner = new Scanner(System.in);
 		Scanner scanner2 = new Scanner(System.in);
-		
+
 		System.out.print("Digite uma opção: \n");
-		
+
 		while (true) {
-			
+
 			System.out.print("1. Adicionar um novo livro na pilha \n");
 			System.out.print("2. Listar todos os livros da Pilha \n");
 			System.out.print("3. Retirar um livro da pilha \n");
@@ -35,7 +33,10 @@ public class PilhaEx02 {
 				System.out.println("Livro adicionado!");
 				break;
 			case 2:
-				System.out.println("Lista de Clientes na Fila: " + pilha);
+				System.out.println("Lista de livros na pilha:");
+				for(String i : pilha) {
+					System.out.println(i);
+				}
 				break;
 			case 3:
 				if (pilha.isEmpty()) {
@@ -44,7 +45,7 @@ public class PilhaEx02 {
 					pilha.pop();
 				System.out.println(pilha);
 				break;
-				}
+			}
 			if (opcaoMenu == 0) {
 				System.out.println("Programa Finalizado!");
 				break;
@@ -52,7 +53,4 @@ public class PilhaEx02 {
 		}
 	}
 
-
 }
-
-

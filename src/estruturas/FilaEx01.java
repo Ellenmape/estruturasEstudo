@@ -34,7 +34,10 @@ public class FilaEx01 {
 				System.out.println("Cliente adicionado!");
 				break;
 			case 2:
-				System.out.println("Lista de Clientes na Fila: " + fila);
+				System.out.println("Lista de Clientes na Fila:");
+				for(String i : fila) {
+					System.out.println(i);
+				}
 				break;
 			case 3:
 				if (fila.isEmpty()) {
